@@ -25,3 +25,18 @@ Uma API RESTful desenvolvida em Flask para gerenciar informações de hotéis, p
 - **Flask-JWT-Extended**: Autenticação baseada em JWT.
 - **SQLAlchemy**: ORM para manipulação do banco de dados.
 - **SQLite**: Banco de dados relacional.
+
+## Pré-requisitos
+
+Antes de rodar o projeto, certifique-se de ter instalado:
+
+- Python (3.10+)
+- Pip (gerenciador de pacotes do Python)
+- Ambiente virtual configurado (opcional, mas recomendado)
+
+## Como Configurar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/api-hoteis.git
+   cd api-hoteis
