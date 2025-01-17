@@ -3,6 +3,9 @@
 Uma API RESTful desenvolvida em Flask para gerenciar informações de hotéis, permitindo operações de CRUD (Create, Read, Update, Delete). A API suporta filtros dinâmicos, como faixa de preço, estrelas e localização, para facilitar a busca de hotéis.
 
 ## Funcionalidades
+- **POST /cadastro**: Cria um usuário.
+- **POST /login**: Faça o login para fazer as operações CRUD em hoteis.
+- **POST /logout**: Para sair da sua conta.
 
 - **GET /hoteis**: Recupera uma lista de hotéis, com suporte a filtros opcionais como:
   - `cidade`: Filtrar por cidade.
