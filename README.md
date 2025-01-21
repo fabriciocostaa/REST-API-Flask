@@ -33,7 +33,7 @@ Uma API RESTful desenvolvida em Flask para gerenciar informações de hotéis, p
   "nome" : "hotel1",
   "estrelas" : 5.0,
   "diaria" : 500,
-  "cidade" : Santo André,
+  "cidade" : "Santo André",
   "site_id" : 1
   }
 
