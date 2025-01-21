@@ -5,12 +5,13 @@ Uma API RESTful desenvolvida em Flask para gerenciar informações de hotéis, p
 ## Funcionalidades
 
 ### **Autenticação e Usuários**
-- **POST /cadastro**: Cria um usuário no sistema. exemplo:
-  ```text 
-{ "login" : "usuario"
-"email" : "teste@gmail.com"
-"senha" : "abc"
-} ```
+- **POST /cadastro**: Cria um usuário no sistema. Exemplo:
+  ```json
+  {
+    "login": "usuario",
+    "email": "teste@gmail.com",
+    "senha": "abc"
+  }
 
 - **POST /login**: Realiza o login e retorna um token JWT, necessário para autenticação nas operações de CRUD em hotéis.
 - **POST /logout**: Finaliza a sessão do usuário, invalidando o token JWT.
@@ -27,14 +28,14 @@ Uma API RESTful desenvolvida em Flask para gerenciar informações de hotéis, p
 - **GET /hoteis/{hotel_id}**: Recupera detalhes de um hotel específico com base no `hotel_id`.
 
 - **POST /hoteis/{hotel_id}**: Cria um novo hotel. **(Requer token de autenticação no header)** exemplo: 
-  ```text 
-{ "hotel_id": "teste1"
-"nome" : "hotel1",
-"estrelas" : 5.0,
-"diaria" : 500,
-"cidade" : Santo André,
-"site_id" : 1
-} ```
+  ```json
+  {
+  "nome" : "hotel1",
+  "estrelas" : 5.0,
+  "diaria" : 500,
+  "cidade" : Santo André,
+  "site_id" : 1
+  }
 
 - **PUT /hoteis/{hotel_id}**: Atualiza as informações de um hotel existente. **(Requer token de autenticação no header)**
 
