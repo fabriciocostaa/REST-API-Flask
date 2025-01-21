@@ -39,6 +39,7 @@ Uma API RESTful desenvolvida em Flask para gerenciar informações de hotéis, p
 ## Requisitos
 
 - **Content-Type**: Todas as operações `POST` e `PUT` requerem que o cabeçalho `Content-Type` seja configurado para `application/json`.
+   ```Content-Type: application/json```
 
 ### **Cabeçalhos obrigatórios**
 1. **Autenticação**: Para as operações de `logout`, `deletar usuário`, `criar novo hotel`, `atualizar hotel`, e `deletar hotel`, o cabeçalho `Authorization` deve conter o token JWT válido:
