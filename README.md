@@ -5,7 +5,13 @@ Uma API RESTful desenvolvida em Flask para gerenciar informações de hotéis, p
 ## Funcionalidades
 
 ### **Autenticação e Usuários**
-- **POST /cadastro**: Cria um usuário no sistema.
+- **POST /cadastro**: Cria um usuário no sistema. exemplo:
+  ```text 
+{ "login" : "usuario"
+"email" : "teste@gmail.com"
+"senha" : "abc"
+} ```
+
 - **POST /login**: Realiza o login e retorna um token JWT, necessário para autenticação nas operações de CRUD em hotéis.
 - **POST /logout**: Finaliza a sessão do usuário, invalidando o token JWT.
 - **GET /usuarios/{user_id}**: Recupera dados do usuário com base no `user_id`.
@@ -20,11 +26,25 @@ Uma API RESTful desenvolvida em Flask para gerenciar informações de hotéis, p
   
 - **GET /hoteis/{hotel_id}**: Recupera detalhes de um hotel específico com base no `hotel_id`.
 
-- **POST /hoteis/{hotel_id}**: Cria um novo hotel. **(Requer token de autenticação no header)**
+- **POST /hoteis/{hotel_id}**: Cria um novo hotel. **(Requer token de autenticação no header)** exemplo: 
+  ```text 
+{ "hotel_id": "teste1"
+"nome" : "hotel1",
+"estrelas" : 5.0,
+"diaria" : 500,
+"cidade" : Santo André,
+"site_id" : 1
+} ```
 
 - **PUT /hoteis/{hotel_id}**: Atualiza as informações de um hotel existente. **(Requer token de autenticação no header)**
 
 - **DELETE /hoteis/{hotel_id}**: Remove um hotel do banco de dados. **(Requer token de autenticação no header)**
+
+### **Sites**
+- **GET /sites** : Recupera uma lista com os sites cadastrados.
+- **POST /sites/{url_site}** : Cadastra um novo site. `Não precisa de body`
+- **PUT /sites/{url_site}** : Atualiza os sites. `Não precisa de body`
+- **DELETE /sites/{url_site}**: Deleta site com todos os hotéis associado ao site. 
 
 ## Tecnologias Utilizadas
 
