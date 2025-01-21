@@ -44,7 +44,6 @@ Uma API RESTful desenvolvida em Flask para gerenciar informações de hotéis, p
 ### **Sites**
 - **GET /sites** : Recupera uma lista com os sites cadastrados.
 - **POST /sites/{url_site}** : Cadastra um novo site. `Não precisa de body`
-- **PUT /sites/{url_site}** : Atualiza os sites. `Não precisa de body`
 - **DELETE /sites/{url_site}**: Deleta site com todos os hotéis associado ao site. 
 
 ## Tecnologias Utilizadas
